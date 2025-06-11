@@ -1,12 +1,84 @@
 html {
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 body {
     background-color: rgb(23, 23, 44);
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+.new-grid-btn {
+    background-color: rgb(81, 92, 203);
+    color: white;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 9px;
+}
+.new-grid-btn:hover {
+    background-color: rgb(68, 81, 224);
+}
+
+.popup {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(13, 13, 124);
+    font-size: 24px;
+    color: white;
+    margin: 0 auto;
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: 4px 6px 8px 2px rgba(0, 0, 0, 0.4);
+}
+.close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 36px;
+    height: 36px;
+    align-self: flex-end;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+.close-btn > img {
+    width: 100%;
+}
+.popup > h2 {
+    margin: 28px 0;
+}
+
+.popup > input {
+    width: max-content;
+    padding: 8px;
+    font-size: 18px;
+    margin-bottom: 32px;
+}
+.create-btn {
+    color: white;
+    font-size: 22px;
+    background-color: rgb(58, 58, 236);
+    padding: 8px 24px;
+    border: none;
+    border-radius: 4px;
+}
+.hidden {
+    visibility: hidden;
+    position: absolute;
+    left: -9999px;
 }
 
 .container {

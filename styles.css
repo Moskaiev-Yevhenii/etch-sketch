@@ -1,3 +1,7 @@
+:root {
+    --grid-size: 4;
+}
+
 html {
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -83,16 +87,18 @@ h1, h2, p {
 
 .container {
     width: 800px;
+    height: 800px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
-
+.grid-row {
+    display: flex;
+}
 .grid-sqr {
-    min-width: 100px;
-    width: calc(100% / 4);
+    width: calc(100% / var(--grid-size));
     aspect-ratio: 1;
     background-color: white;
+    border: none;
 }
 .hovered {
     background-color: chocolate;

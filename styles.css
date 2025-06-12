@@ -29,17 +29,43 @@ h1, h2, p {
     padding: 8px 24px;
     border: none;
     border-radius: 4px;
-    margin-bottom: 9px;
 }
 .new-grid-btn:hover {
     background-color: rgb(68, 81, 224);
 }
+
+.paint-tools-container {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 32px;
+}
 .selected-color-ui {
     width: 100px;
-    height: 70px;
+    height: 100%;
     background-color: var(--paint-color);
     border: 2px solid whitesmoke;
-    margin-bottom: 8px;
+    border-radius: 8px;
+}
+.paint-tool-btn {
+    border: none;
+    border-radius: 8px;
+    padding: 4px;
+}
+.tool-image {
+    width: 60px;
+}
+.paint-mode-btn {
+    width: 50px;
+    height: 50px;
+    background-color: chocolate;
+    color: white;
+    font-size: 32px;
+    font-weight: 800;
+    text-align: center;
+    border-radius: 8px;
 }
 
 .popup {

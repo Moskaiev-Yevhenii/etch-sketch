@@ -54,6 +54,7 @@ function generateGrid (size = gridSize) {
             gridSqr.classList.add('grid-sqr');
             gridSqr.addEventListener('mouseover', () => {gridSqr.classList.add('hovered')});
             gridSqr.addEventListener('mouseout', () => {gridSqr.classList.remove('hovered')});
+            gridSqr.addEventListener('click', () => {gridSqr.style.backgroundColor = selectedPalette[selectedColorIndex]});
             gridRow.appendChild(gridSqr);
         }
         gridContainer.appendChild(gridRow);
